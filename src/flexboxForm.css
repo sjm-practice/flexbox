@@ -52,7 +52,7 @@ a {
   padding:10px;
   background:white;
   line-height:50px;
-  font-size: 20px;
+  font-size: 18px;
   border-radius:0;
   outline:0;
   border-right:1px solid rgba(0,0,0,0.2);
@@ -64,3 +64,26 @@ a {
 }
 
 /*Flexbox Starts Here*/
+
+/* Flex Container */
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flex Item && Container */
+.flex-form {
+  display: flex;
+  border: 20px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+input[type="search"] {
+  flex-basis: 400px;
+}
+
+/* I added this to make the date text show */
+input[type="date"] {
+  flex-basis: 300px;
+}
