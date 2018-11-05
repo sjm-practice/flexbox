@@ -49,6 +49,7 @@ Following along a Wes Bos tutorial and creating a few simple pages to learn flex
 * __align-content__ - __*justifies*__ items along __*cross axis*__ (when there is space)
   - stretch - default; strecthes items along cross axis
   - others: flex-start, flex-end, center, space-between, space-around
+  - NOTE: __this property has no effect when there is only one line of flex items__
 
 #### Align
 * __align-items__
