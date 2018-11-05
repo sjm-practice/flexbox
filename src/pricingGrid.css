@@ -40,7 +40,6 @@ a {
   border-radius:4px;
 }
 
-
 .plan h2 {
   text-transform: uppercase;
   color:white;
@@ -54,9 +53,33 @@ a {
   margin: 10px 0;
 }
 
-
+/* Flex Container */
 .pricing-grid {
   max-width:750px;
   margin: 0 auto;
-  
+  display: flex;
+  align-items: center;
+}
+
+/* Flex Item */
+.plan {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+
+  /* nested flex container */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plan > * {
+  flex: 1 1 100%;
+}
+
+.plan .cta {
+  /* this property was set in tutorial, but seems unnecessary */
+  /* align-self: flex-end; */
 }
